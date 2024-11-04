@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoramento de Consumo de Água</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./sabesp.svg" alt="Logo Sabesp" class="logo">
+      <h1>Monitoramento de Consumo de Água</h1>
+    </header>
+
+    <section class="form-section">
+      <h2>Registrar Consumo de Água</h2>
+      <form id="consumptionForm">
+        <label for="userId">ID do Usuário:</label>
+        <input type="text" id="userId" required>
+
+        <label for="consumptionAmount">Quantidade Consumida (m³):</label>
+        <input type="number" id="consumptionAmount" required>
+
+        <label for="readingDate">Data da Leitura:</label>
+        <input type="date" id="readingDate" required>
+
+        <button type="button" class="rounded-button" onclick="registerConsumption()">Salvar Consumo</button>
+      </form>
+    </section>
+
+    <section class="history-section">
+      <h2>Consulta de Histórico de Consumo</h2>
+      <label for="historyUserId">ID do Usuário:</label>
+      <input type="text" id="historyUserId" required>
+
+      <label for="startDate">Data Inicial:</label>
+      <input type="date" id="startDate" required>
+
+      <label for="endDate">Data Final:</label>
+      <input type="date" id="endDate" required>
+
+      <button type="button" class="rounded-button" onclick="fetchConsumptionHistory()">Consultar Histórico</button>
+
+      <div id="historyTable" class="history-table"></div>
+    </section>
+
+    <section class="alert-section">
+      <h2>Alerta de Consumo Elevado</h2>
+      <label for="alertUserId">ID do Usuário:</label>
+      <input type="text" id="alertUserId" required>
+
+      <button type="button" class="rounded-button" onclick="checkHighConsumptionAlert()">Verificar Alerta</button>
+
+      <div id="alertMessage" class="alert-message"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
