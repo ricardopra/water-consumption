@@ -8,6 +8,7 @@ dotenv.config();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors(); // Habilita CORS para todas as origens
   app.use(express.static(join(__dirname, '..', 'public')));
   await app.listen(3000);
 }
