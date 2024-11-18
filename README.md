@@ -1,6 +1,6 @@
 # Projeto Consumo de Agua com Front-End 🌊
 
-Este projeto é uma API desenvolvida em **NestJS** com **MongoDB**, focada no monitoramento do consumo de água em uma comunidade. Ele visa promover a conscientização sobre o uso eficiente da água, alinhando-se ao **Objetivo de Desenvolvimento Sustentável (ODS) 6**.
+Este projeto é uma API desenvolvida em **NestJS** com **MongoDB**, focada no monitoramento do consumo de água em uma comunidade. Ele visa promover a conscientização sobre o uso eficiente da água, trabalho de conclusão curso de WebMobile Mackenzie.
 
 ## 🚀 Funcionalidades
 
