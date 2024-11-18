@@ -11,7 +11,7 @@ async function bootstrap() {
   
   
   app.enableCors({
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://water-consumption-pied.vercel.app/'], 
+    origin: ['http://localhost:3000'], 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, 
